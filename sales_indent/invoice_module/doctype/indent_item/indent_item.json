@@ -1,0 +1,171 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-18 16:37:09.731554",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sales_order",
+  "customer",
+  "po_date",
+  "po_no",
+  "supplier_code",
+  "company",
+  "item_section",
+  "item_code",
+  "qty",
+  "rate",
+  "billed_amount",
+  "sales_tc_section",
+  "sales_taxes_and_charges_template",
+  "type",
+  "tax_rate",
+  "cgst_rate",
+  "sgst_rate",
+  "terms_section",
+  "payment_terms_template",
+  "payment_term",
+  "due_date",
+  "payment_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "sales_order",
+   "fieldtype": "Data",
+   "label": "Sales Order"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Data",
+   "label": "Customer"
+  },
+  {
+   "fieldname": "po_date",
+   "fieldtype": "Data",
+   "label": "Po_date"
+  },
+  {
+   "fieldname": "po_no",
+   "fieldtype": "Data",
+   "label": "Po_no"
+  },
+  {
+   "fieldname": "supplier_code",
+   "fieldtype": "Data",
+   "label": "Supplier Code"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "label": "Company"
+  },
+  {
+   "fieldname": "item_section",
+   "fieldtype": "Section Break",
+   "label": "Item"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Data",
+   "label": "Item Code"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "label": "Qty"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Data",
+   "label": "Rate"
+  },
+  {
+   "fieldname": "billed_amount",
+   "fieldtype": "Data",
+   "label": "Billed_Amount"
+  },
+  {
+   "fieldname": "sales_tc_section",
+   "fieldtype": "Section Break",
+   "label": "Sales TC"
+  },
+  {
+   "fieldname": "sales_taxes_and_charges_template",
+   "fieldtype": "Data",
+   "label": "Sales Taxes And Charges Template"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "fieldname": "tax_rate",
+   "fieldtype": "Data",
+   "label": "Tax Rate"
+  },
+  {
+   "fieldname": "cgst_rate",
+   "fieldtype": "Data",
+   "label": "CGST Rate"
+  },
+  {
+   "fieldname": "sgst_rate",
+   "fieldtype": "Data",
+   "label": "SGST Rate"
+  },
+  {
+   "fieldname": "terms_section",
+   "fieldtype": "Section Break",
+   "label": "Terms"
+  },
+  {
+   "fieldname": "payment_terms_template",
+   "fieldtype": "Data",
+   "label": "Payment Terms Template"
+  },
+  {
+   "fieldname": "payment_term",
+   "fieldtype": "Data",
+   "label": "payment Term"
+  },
+  {
+   "fieldname": "due_date",
+   "fieldtype": "Data",
+   "label": "Due Date"
+  },
+  {
+   "fieldname": "payment_amount",
+   "fieldtype": "Data",
+   "label": "Payment Amount"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-18 16:41:18.060400",
+ "modified_by": "Administrator",
+ "module": "invoice module",
+ "name": "Indent Item",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

@@ -1,0 +1,205 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-18 16:37:15.484064",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "product__code",
+  "billed_qty",
+  "no_of_packages",
+  "package_type",
+  "asn_no",
+  "customer_name",
+  "customer_address",
+  "supplier_code",
+  "company",
+  "po_no",
+  "po_date",
+  "sales_order",
+  "customer",
+  "qty",
+  "rate",
+  "billed_amount",
+  "taxes_and_charges",
+  "type",
+  "tax_rate",
+  "cgst_rate",
+  "sgst_rate",
+  "payment_term_template",
+  "payment_term",
+  "due_date",
+  "payment_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "product__code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Product  Code",
+   "options": "Indent Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "billed_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Billed Qty",
+   "reqd": 1
+  },
+  {
+   "fieldname": "no_of_packages",
+   "fieldtype": "Data",
+   "label": "No of Packages",
+   "reqd": 1
+  },
+  {
+   "fieldname": "package_type",
+   "fieldtype": "Select",
+   "label": "Package Type",
+   "options": "Box\nTray",
+   "reqd": 1
+  },
+  {
+   "default": "N/A",
+   "fieldname": "asn_no",
+   "fieldtype": "Data",
+   "label": "ASN No",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "product__code.customer",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "customer_address",
+   "fieldtype": "Data",
+   "label": "Customer Address"
+  },
+  {
+   "fetch_from": "product__code.supplier_code",
+   "fieldname": "supplier_code",
+   "fieldtype": "Data",
+   "label": "Supplier Code"
+  },
+  {
+   "fetch_from": "product__code.company",
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "label": "company"
+  },
+  {
+   "fetch_from": "product__code.po_no",
+   "fieldname": "po_no",
+   "fieldtype": "Data",
+   "label": "PO No"
+  },
+  {
+   "fetch_from": "product__code.po_date",
+   "fieldname": "po_date",
+   "fieldtype": "Data",
+   "label": "PO Date"
+  },
+  {
+   "fetch_from": "product__code.sales_order",
+   "fieldname": "sales_order",
+   "fieldtype": "Data",
+   "label": "Sales Order "
+  },
+  {
+   "fetch_from": "product__code.customer",
+   "fieldname": "customer",
+   "fieldtype": "Data",
+   "label": "Customer"
+  },
+  {
+   "fetch_from": "product__code.qty",
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "label": "Qty"
+  },
+  {
+   "fetch_from": "product__code.rate",
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "label": "Rate",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "fetch_from": "product__code.billed_amount",
+   "fieldname": "billed_amount",
+   "fieldtype": "Currency",
+   "label": "Billed Amount",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "fetch_from": "product__code.sales_taxes_and_charges_template",
+   "fieldname": "taxes_and_charges",
+   "fieldtype": "Data",
+   "label": "Taxes and Charges"
+  },
+  {
+   "fetch_from": "product__code.type",
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "fetch_from": "product__code.tax_rate",
+   "fieldname": "tax_rate",
+   "fieldtype": "Data",
+   "label": "Tax Rate"
+  },
+  {
+   "fetch_from": "product__code.cgst_rate",
+   "fieldname": "cgst_rate",
+   "fieldtype": "Data",
+   "label": "CGST Rate"
+  },
+  {
+   "fetch_from": "product__code.sgst_rate",
+   "fieldname": "sgst_rate",
+   "fieldtype": "Data",
+   "label": "SGST Rate"
+  },
+  {
+   "fetch_from": "product__code.payment_terms_template",
+   "fieldname": "payment_term_template",
+   "fieldtype": "Data",
+   "label": "Payment Term Template"
+  },
+  {
+   "fetch_from": "product__code.payment_term",
+   "fieldname": "payment_term",
+   "fieldtype": "Data",
+   "label": "Payment Term"
+  },
+  {
+   "fetch_from": "product__code.due_date",
+   "fieldname": "due_date",
+   "fieldtype": "Data",
+   "label": "Due Date"
+  },
+  {
+   "fetch_from": "product__code.payment_amount",
+   "fieldname": "payment_amount",
+   "fieldtype": "Data",
+   "label": "Payment Amount"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-05-18 17:30:13.546889",
+ "modified_by": "Administrator",
+ "module": "invoice module",
+ "name": "Production",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
